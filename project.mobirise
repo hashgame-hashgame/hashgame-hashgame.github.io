@@ -1,0 +1,146 @@
+{
+  "settings": {
+    "name": "hashgame-hashgame",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/bcgamefavicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://hashgame-hashgame.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://hashgame-hashgame.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Hash.Game BC | A Fair Gaming Platform",
+        "meta_descr": "BC Hash Game is progressively acknowledged as a fundamental component of justice in online gaming. Using cryptographic technology to ensure that every player's ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://hash.game/\"><img src=\"@PROJECT_PATH@/assets/images/bcgame.png\" alt=\"hashgame\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "uWFkybzEyA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://hash.game/\" class=\"text-primary\">HashGame</a> BC | A Fair Gaming Platform</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is a Hash Game? Understanding the Popular Crypto-Based Game Format</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving world of online gaming and cryptocurrencies, Hash Games have emerged as a unique and provably fair format of gameplay. Often associated with blockchain technology and crypto gambling platforms, these games use cryptographic hashes to ensure transparency and fairness. But what exactly is a hash game, how does it work, and why is it gaining traction?<br><br>Let’s break it down.<br><br>🔍 What is a <a href=\"https://hash.game/\" class=\"text-primary\">HashGame</a>?<br><br>A hash game is a type of online game where the outcome is determined by a cryptographic hash — typically using algorithms like SHA-256 (Secure Hash Algorithm). These games are often found on blockchain-based gambling platforms or crypto casinos and are known for being provably fair — meaning players can verify that outcomes are not manipulated.<br><br>Common types of hash games include:<br><br>Crash<br><br>Plinko<br><br>Dice<br><br>Mines<br><br>Hi-Lo<br><br>Though different in mechanics, they all share a similar cryptographic foundation.<br><br>🧠 How Does a <a href=\"https://hash.game/\" class=\"text-primary\">HashGame</a> Work?<br><br>Here's a simplified breakdown of how hash games use cryptography to ensure fairness:<br><br>Server Seed Generation:<br><br>The game server generates a secret \"server seed\" — a random string that is hashed (e.g., using SHA-256).<br><br>The hash of this seed is shown to the player before the game starts, but not the seed itself.<br><br>Player Seed Input:<br><br>Players may also provide their own \"client seed\" to further randomize the result.<br><br>Hash Combination:<br><br>After the round ends, the server reveals the original seed.<br><br>The game combines both the server seed and the client seed to generate a random outcome.<br><br>Anyone can hash the server seed and confirm that it matches the hash shown earlier — proving the game wasn't rigged.<br><br>💡 Example: Hash Game in Action (Dice Game)<br><br>Let’s say a dice game promises that the roll will be between 0 and 99.<br><br>Server seed (secret): abc123<br><br>Server hash (public): 6ca4b1...<br><br>Client seed (user-generated): hello2025<br><br>The game might hash the combination and convert it into a number between 0 and 99. Once the seed is revealed, players can verify that the original hash matches and the result was genuinely random.<br><br>🎰 Popular Hash Games<br>Game Type\tDescription<br>Crash\tA graph line rises until it crashes. Players cash out before it does.<br>Dice\tRoll a random number — bet over/under.<br>Mines\tLike Minesweeper — avoid bombs and cash out.<br>Plinko\tDrop a ball down pegs — prizes based on where it lands.<br>Hi-Lo\tGuess if the next card is higher or lower.<br>✅ Benefits of Hash Games<br><br>Provably Fair: Transparent outcomes verifiable by players.<br><br>Fast and Simple: Instant results, easy gameplay.<br><br>Crypto-Ready: Often integrated with Bitcoin, Ethereum, and other coins.<br><br>No House Manipulation: Once the hash is committed, the result can't be changed.<br><br>⚠️ Risks and Considerations<br><br>Despite the fairness, hash games are still gambling:<br><br>Addictive: Simple mechanics can lead to compulsive play.<br><br>Volatility: Especially with crypto-based betting.<br><br>Not Regulated: Many platforms operate outside traditional gambling regulations.<br><br>House Edge Exists: The platform still profits over time.<br><br>🧾 Conclusion<br><br><a href=\"https://hash.game/\" class=\"text-primary\">Hashgame</a> represent a compelling blend of cryptography, gaming, and blockchain technology. Their transparency and speed make them attractive, especially to crypto enthusiasts. However, as with any form of gambling, they should be approached with caution, discipline, and awareness.<br><br>Whether you're a casual gamer or a blockchain nerd, hash games showcase how technology can transform traditional gaming — one hash at a time.<br><br>🎲 <a href=\"https://hash.game/\" class=\"text-primary\">HashGame</a>: The Future of Fair Play in Online Gambling<br>Introduction<br><br>In a digital era driven by blockchain and transparency, traditional gambling models are being challenged by new formats that promise fairness and verifiability. One of the most revolutionary formats in this space is the Hash Game — a category of games that uses cryptographic functions to ensure outcomes are fair, random, and tamper-proof.<br><br>Hash games are changing the way people view online betting and gaming, blending math, cryptography, and entertainment into a provably fair experience.<br><br>🔐 The Cryptographic Backbone: What is a Hash?<br><br>At the core of hash games lies the concept of a cryptographic hash function.<br><br>A hash is a fixed-length string generated from input data (like a word, number, or even a full document) using algorithms like SHA-256. It has a few critical properties:<br><br>Deterministic: The same input always gives the same output.<br><br>Irreversible: You can’t reverse-engineer the input from the hash.<br><br>Collision-resistant: It’s nearly impossible to find two different inputs with the same hash.<br><br>Unpredictable: Even a tiny change in input drastically changes the output.<br><br>These properties make hashes perfect for games that demand fairness and unpredictability.<br><br>🧬 Seeds: The DNA of Hash Games<br><br>Hash games rely on two main seeds:<br><br>Server Seed (generated and hidden by the platform)<br><br>Client Seed (often generated or chosen by the user)<br><br>Once the game round ends, the platform reveals the server seed, allowing players to verify that the outcome wasn’t manipulated post-game.<br><br>Example:<br><br>Let’s say we use SHA-256 hashing:<br><br>Server seed: abc123<br><br>Client seed: user2025<br><br>Hash result:<br>SHA256(abc123:user2025) = 3a7bd3... (truncated)<br><br>This string is then used to calculate a number or event (e.g., 0–99 for dice, location of mines, etc.).<br><br>📊 How Randomness is Derived<br><br>Hash outputs are hexadecimal strings (letters and numbers). To turn a hash into a usable result (like a number), the game might:<br><br>Convert part of the hash into decimal.<br><br>Use modulo math to reduce the range.<br><br>Dice Example:<br><br>SHA-256 hash result: 3a7bd3e2360a3d4b...<br><br>Take the first 5 characters: 3a7bd<br><br>Convert from hex to decimal: 239773<br><br>Use modulo 100: 239773 % 100 = 73<br><br>🎲 Result: 73<br><br>Players can re-do this process themselves to verify fairness.<br><br>🔄 Real-World Hash Game Use Cases<br>1. Crypto Casinos<br><br>Platforms like Stake.com, BC.Game, and Roobet offer hash-based games like Crash, Dice, and Plinko. These games are attractive to crypto users because of transparency and low entry barriers.<br><br>2. Decentralized Applications (dApps)<br><br>Smart contracts on Ethereum or Solana can run hash games directly on the blockchain, removing any centralized control. This makes the entire game transparent, with seeds and hashes stored immutably on-chain.<br><br>3. NFT &amp; Metaverse Gaming<br><br>In NFT-based games, hash logic is being used for loot drops, battles, and outcomes — ensuring randomness and fairness.<br><br>🧠 Advanced Concepts: Salting, HMACs, and RNGs<br><br>Salting: Adding random characters to the seed before hashing for extra security.<br><br>HMAC (Hash-based Message Authentication Code): Combines a secret key and a message — used in some hash games for better integrity.<br><br>Chainlink VRF: Some dApps use Chainlink’s Verifiable Random Function (VRF), a decentralized RNG using hashes, to ensure unbiased results.<br><br>📜 Regulation and Legality<br><br>Despite being transparent, hash games are still gambling and thus face legal scrutiny. Important points:<br><br>Jurisdiction matters: Some countries ban online gambling, even if it's provably fair.<br><br>Lack of regulation: Many crypto casinos operate offshore.<br><br>AML/KYC compliance: Users may still need to verify identity on legitimate platforms.<br><br>Reminder: Just because it’s fair doesn’t mean it’s legal everywhere. Always check your local laws.<br><br>📈 The Future of Hash Games<br><br>Hash games are more than just a trend — they represent a paradigm shift in digital gaming. Here's what's ahead:<br><br>✅ Trends to Watch:<br><br>Integration with AI: Personalized hash-based games adapting to player styles.<br><br>Cross-chain gaming: Use of multiple blockchains for hosting hash games.<br><br>Social gambling: Multiplayer hash games where friends bet or play against each other.<br><br>DAO-governed casinos: Community-owned hash game platforms powered by decentralized governance.<br><br>🧾 Final Thoughts: Are Hash Games Worth It?<br><br>Pros:<br><br>Transparent and provably fair<br><br>Fast, fun, and crypto-friendly<br><br>Decentralized options available<br><br>Cons:<br><br>Still gambling — risk of loss<br><br>Addiction potential<br><br>Legal gray areas<br><br>If you're interested in gaming that respects your intelligence and offers fairness through cryptographic proof, hash games are a compelling option. Just remember: like any form of gambling, the house edge is real — play responsibly.<br><br>Want to Try a <a href=\"https://hash.game/\" class=\"text-primary\">HashGame</a>?<br><br>If you're curious, start with free-to-play versions or simulators before betting real money. Use testnets or demo versions of dApps to understand how seeds and hashes work.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uWFkyZXWjp",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
